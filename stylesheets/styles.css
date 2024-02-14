@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: aliceblue;
+  background-color: #fafafa;
 }
 ul li {
   list-style: none;
@@ -13,14 +13,14 @@ ul li {
 h1 {
   font-size: 2.3em;
   margin: 0px 0px 20px 0px;
+  color: #111;
 }
-h2 {
-  color: #4e4e4e;
-  font-size: 1.3em;
-}
+
 p {
-  color: #7c7c7c;
+  font-family: "Courier New", Courier, monospace;
+  color: #000000b7;
   line-height: 2;
+  font-weight: bolder;
 }
 .menu-bg {
   padding: 5px;
@@ -44,16 +44,16 @@ p {
 .picture-and-name {
   align-items: center;
   display: flex;
+  color: #4e4e4e;
+  font-size: 1em;
 }
-.picture-and-name img{
-width: 50px;
-height: 50px;
-border-radius: 50%;
-margin: 0px 5px 0px 0px;
+.picture-and-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px 5px 0px 0px;
 }
-.home-bg {
-  background-color: aliceblue;
-}
+
 .home {
   display: flex;
   align-items: center;
@@ -89,10 +89,73 @@ margin: 0px 5px 0px 0px;
 .social-media ul li {
   padding: 15px;
 }
-@media (max-width:480px) {
+.about {
+  text-align: center;
+  margin: 0px 0px 0px 60px;
+}
+.about spam {
+  display: inline-block;
+  background-color: tomato;
+  height: 6px;
+  width: 50px;
+  border-radius: 20px;
+}
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.about-me input {
+  margin: 40px 0px;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 3px;
+  background-color: #ffcc00;
+  color: #4e4e4e;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+.know-me {
+  flex: 1 1 300px;
+  line-height: 2;
+  padding: 0px 100px 0px 0px;
+}
+.know-me h2 {
+  color: #111;
+  margin: 0px 0px 20px 0px;
+}
+.my-skills {
+  flex: 1 1 200px;
+  line-height: 2;
+}
+.my-skills h2 {
+  color: #111;
+  margin: 0px 0px 20px 0px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills span {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(153, 153, 153, 0.2);
+  color: #666;
+  margin: 8px 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
   h1 {
     font-size: 1.5em;
     margin: 0px 0px 20px 0px;
+  }
+  p {
+    color: #3b3b3b;
+    line-height: 1.3;
   }
   .menu {
     margin: 5px 10px;
@@ -109,12 +172,39 @@ margin: 0px 5px 0px 0px;
     align-items: center;
     height: 60vh;
   }
-  .social-media{
+  .social-media {
     padding: 0px 0px;
   }
-  .social-media ul li i{
+  .social-media ul li i {
     font-size: 25px;
-    
   }
-
+  .about {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .about {
+    text-align: center;
+    margin: 120px 0px 0px 50px;
+  }
+  .about spam {
+    display: inline-block;
+    background-color: tomato;
+    height: 6px;
+    width: 50px;
+    border-radius: 20px;
+  }
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 20px;
+  }
+  .know-me {
+    line-height: 1;
+    padding: 0px 0px 0px 0px;
+  }
+  .know-me h2 {
+    color: #111;
+    margin: 0px 0px 20px 0px;
+  }
 }
