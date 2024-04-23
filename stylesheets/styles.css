@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+
   background-color: #fafafa;
 }
 ul li {
@@ -66,7 +67,7 @@ p {
   text-align: center;
   margin: 0 auto;
 }
-.home-description input {
+.button-home {
   margin: 40px 0px;
   font-size: 17px;
   text-decoration: none;
@@ -79,7 +80,7 @@ p {
   cursor: pointer;
   box-shadow: 0 0 10px black;
 }
-.home-description input:hover {
+.button-home input:hover {
   background-color: rgb(255, 255, 0);
 }
 /* ///////////////////////////////////////////// */
@@ -93,11 +94,11 @@ p {
 }
 /* ///////////////////////////////////////////// */
 /* About section */
-.about {
+.about-title {
   text-align: center;
   margin: 0px 0px 0px 60px;
 }
-.about spam {
+.about-title spam {
   display: inline-block;
   background-color: tomato;
   height: 6px;
@@ -107,30 +108,23 @@ p {
 .about-me {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+  justify-content: center;
+  max-width: 1160px;
+  margin: 100px auto;
 }
-.about-me input {
+.button-about {
   margin: 40px 0px;
-  font-size: 17px;
-  text-decoration: none;
   padding: 10px 60px;
-  border-radius: 3px;
-  background-color: #ffcc00;
-  color: #4e4e4e;
-  font-weight: bolder;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 10px black;
 }
-.about-me input:hover {
+.button-about input:hover {
   background-color: rgb(255, 255, 0);
 }
 /* ///////////////////////////////////////////////// */
 /* Get Know me */
 .know-me {
-  flex: 1 1 300px;
+  flex: 1 1 0px;
   line-height: 2;
-  padding: 0px 100px 0px 0px;
+  padding: 0px 200px 0px 0px;
 }
 .know-me h2 {
   color: #111;
@@ -158,7 +152,42 @@ p {
   margin: 8px 5px;
   border-radius: 10px;
 }
+.button-project input:hover {
+  background-color: rgb(255, 255, 0);
+}
 
+.projects {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1160px;
+  margin: 90px auto;
+}
+.projects img {
+  max-width: 50%;
+  height: auto;
+}
+
+.desc-project {
+  flex: 1;
+  margin: auto 0;
+  padding: 0 0 0 50px;
+}
+
+.talk ul {
+  margin: 20px 0 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.talk ul li p {
+  margin: 0 10px;
+}
+.talk ul li i {
+  margin: 0 50px;
+  color: #ffcc00;
+}
 /* /////////////////////////////////////////////////// */
 /* responsiveness */
 @media (max-width: 480px) {
@@ -170,7 +199,7 @@ p {
   }
   p {
     font-size: 1.1em;
-    color: #3b3b3b;
+    color: #000000b7;
     line-height: 1.3;
   }
   /* /////////////////////////////////////////////// */
@@ -206,7 +235,7 @@ p {
     text-align: center;
     margin: 120px 0px 0px 50px;
   }
-  .about h1{
+  .about h1 {
     font-size: 2em;
   }
   .about spam {
@@ -221,6 +250,19 @@ p {
     flex-wrap: wrap;
     margin: 70px 20px;
   }
+  .projects-title{
+    margin: 0;
+  }
+  .projects img {
+    max-width:300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .desc-project {
+    flex: 1;
+    margin: 40px 0;
+    padding: 0 0 0 50px;
+  }
   /* ////////////////////////////////////////// */
   /* Get know me  */
   .know-me {
@@ -230,5 +272,23 @@ p {
   .know-me h2 {
     color: #111;
     margin: 0px 0px 20px 0px;
+  }
+  .talk ul {
+    margin: 20px 0 0px 40px;
+    display: flex;
+    
+  }
+  .talk ul li p {
+    margin: 10px 10px;
+    color: white
+  }
+  .talk ul li {
+    background-color: #0026ff;
+    width: 160px;
+    height: 100px;
+    display: block;
+    margin: 10px 50px;
+    color: #ffcc00;
+    border-radius: 10px;
   }
 }
